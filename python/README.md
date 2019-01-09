@@ -1,5 +1,7 @@
 # How to use the CryptoCompare API with python
 
+Official documentation [here](https://min-api.cryptocompare.com/documentation).
+
 ## Generate an API key
 [Read this guide to generate an API key](https://www.cryptocompare.com/coins/guides/how-to-use-our-api/).
 
