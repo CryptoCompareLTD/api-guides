@@ -18,9 +18,16 @@ const options = {
     tsyms: "USD"
 };
 
+const headers = {
+   "Authorization": apiKey 
+};
+
 const fullURL = getFullURL(baseURL, options);
 
-request.get(fullURL, function(err, res, body){
+request.get({
+    url: fullURL,
+    headers: headers
+}, function(err, res, body){
     if (err){
         console.log(err);
     } else {
