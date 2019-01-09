@@ -1,25 +1,22 @@
 import requests
 
-def getUrlToJSON(url):
-    return requests.get(url).json()
-    
-def generateURL(endpoint, options):
-    params = []
-    for key in options:
-        params.append("{}={}".format(key, options[key]))
-    return endpoint + "?" + "&".join(params)
+def getUrlToJSON(url, payload):
+    return requests.get(url, params=payload).json()
     
 apiKey = "SET-YOUR-API-KEY-HERE"
 
-endpoint = "https://min-api.cryptocompare.com/data/price"
+url = "https://min-api.cryptocompare.com/data/price"
 
-options = {
+payload = {
     "apiKey": apiKey,
     "fsym": "BTC",
     "tsyms": "USD"
 }
 
-url = generateURL(endpoint, options)
-result = getUrlToJSON(url)
+result = getUrlToJSON(url, payload)
 print(result)
+"""
+Result: 
+{u'USD': 4069.35}
+"""
 
