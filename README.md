@@ -1,4 +1,4 @@
-# How to use the CryptoCompare API with node
+# How to use the CryptoCompare API
 
 Official documentation [here](https://min-api.cryptocompare.com/documentation).
 
