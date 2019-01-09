@@ -18,7 +18,7 @@ const options = {
 };
 
 const headers = {
-   "Authorization": apiKey 
+   "Authorization": "Apikey " + apiKey 
 };
 
 const fullURL = getFullURL(baseURL, options);

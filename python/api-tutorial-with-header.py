@@ -10,7 +10,7 @@ payload = {
 }
 
 headers = {
-    "authorization": apiKey
+    "authorization": "Apikey " + apiKey
 }
 
 result = requests.get(url, headers=headers, params=payload).json()
