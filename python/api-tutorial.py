@@ -1,8 +1,5 @@
 import requests
 
-def getUrlToJSON(url, payload):
-    return requests.get(url, params=payload).json()
-    
 apiKey = "SET-YOUR-API-KEY-HERE"
 
 url = "https://min-api.cryptocompare.com/data/price"
@@ -13,7 +10,8 @@ payload = {
     "tsyms": "USD"
 }
 
-result = getUrlToJSON(url, payload)
+result = requests.get(url, params=payload).json()
+
 print(result)
 """
 Result: 
