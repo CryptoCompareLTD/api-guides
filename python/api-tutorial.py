@@ -5,7 +5,7 @@ apiKey = "SET-YOUR-API-KEY-HERE"
 url = "https://min-api.cryptocompare.com/data/price"
 
 payload = {
-    "apiKey": apiKey,
+    "api_key": apiKey,
     "fsym": "BTC",
     "tsyms": "USD"
 }
