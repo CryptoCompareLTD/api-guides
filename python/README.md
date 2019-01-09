@@ -36,7 +36,7 @@ Result:
 ```
 
 ### Send API key in request payload
-You can send the API key as a request payload.
+You can send the API key as a request payload as in [this tutorial](https://github.com/CryptoCompareLTD/api-guides/blob/master/python/api-tutorial.py).
 
 ```
 import requests
