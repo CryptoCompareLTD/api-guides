@@ -10,4 +10,5 @@ Here you can find a few code examples written in different languages so you get 
 
 * [Python tutorials](https://github.com/CryptoCompareLTD/api-guides/tree/master/python)
 * [Node tutorials](https://github.com/CryptoCompareLTD/api-guides/tree/master/node)
+* [Javascript (frontend) tutorials](https://github.com/CryptoCompareLTD/api-guides/tree/master/javascript)
 * [Google Sheets tutorials](https://github.com/CryptoCompareLTD/api-guides/tree/master/googlesheet)
