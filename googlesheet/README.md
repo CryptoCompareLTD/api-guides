@@ -46,8 +46,7 @@ function ccHistory(options) {
   for (i in options){
     params.push(options[i][0] + "=" + options[i][1]);
   }
-  //var url = "https://min-api.cryptocompare.com/data/histoday?" + params.join("&");
-  var url = "https://min-api.cryptocompare.com/data/histoday?fsym=BTC&tsym=USD&limit=10&api_key=5d9f5ed136aedef7104a12f474e28453d413d884f54169441aaa80751c3b9ee5"
+  var url = "https://min-api.cryptocompare.com/data/histoday?" + params.join("&");
   Logger.log(url);
  
   var response = UrlFetchApp.fetch(url);
