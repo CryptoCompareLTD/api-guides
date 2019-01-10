@@ -22,7 +22,6 @@ function ccPrice(options) {
   Logger.log(url);
  
   var response = UrlFetchApp.fetch(url);
-  Logger.log(response.getContentText());
   
   var data = response.getContentText();
   var json = JSON.parse(data);
@@ -41,7 +40,6 @@ Paste the following code snippet into your script editor in Google Sheets.
 
 ```
 function ccHistory(options) {
-  Logger.log(options);
   var params = [];
   for (i in options){
     params.push(options[i][0] + "=" + options[i][1]);
@@ -50,7 +48,6 @@ function ccHistory(options) {
   Logger.log(url);
  
   var response = UrlFetchApp.fetch(url);
-  Logger.log(response.getContentText());
   
   var data = response.getContentText();
   var response = JSON.parse(data);
