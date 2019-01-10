@@ -48,7 +48,7 @@ apiKey = "SET-YOUR-API-KEY-HERE"
 url = "https://min-api.cryptocompare.com/data/price"
 
 payload = {
-    "apiKey": apiKey,
+    "api_key": apiKey,
     "fsym": "BTC",
     "tsyms": "USD"
 }
@@ -74,7 +74,7 @@ apiKey = "SET-YOUR-API-KEY-HERE"
 url = "https://min-api.cryptocompare.com/data/histoday"
 
 payload = {
-    "apiKey": apiKey,
+    "api_key": apiKey,
     "fsym": "BTC",
     "tsym": "USD",
     "limit": 100
