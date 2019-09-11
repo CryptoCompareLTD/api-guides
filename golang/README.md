@@ -9,4 +9,4 @@ Official documentation [here](https://min-api.cryptocompare.com/documentation).
 There are many modules to do an http request, in this example we use the request npm module.
 
 ### Send API key in request header
-You can choose to send your authentication in the request header as in [this tutorial](https://github.com/CryptoCompareLTD/api-guides/blob/master/node/api-tutorial-with-header.js) or in the request parameters as in [this tutorial]().
+You can choose to send your authentication in the request header as in [api-tutorial-with-header.go](https://github.com/CryptoCompareLTD/api-guides/blob/master/golang/api-tutorial-with-header.go) or in the request parameters as in [api-tutorial.go](https://github.com/CryptoCompareLTD/api-guides/blob/master/golang/api-tutorial.go).
