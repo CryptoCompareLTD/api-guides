@@ -16,7 +16,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	req.Header.Set("authorization", header)
 
 	client := &http.Client{}
 
