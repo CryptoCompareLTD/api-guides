@@ -12,6 +12,7 @@ Here you can find a few code examples written in different languages so you can 
 * [Node tutorials](https://github.com/CryptoCompareLTD/api-guides/tree/master/node)
 * [Javascript (frontend) tutorials](https://github.com/CryptoCompareLTD/api-guides/tree/master/javascript)
 * [Google Sheets tutorials](https://github.com/CryptoCompareLTD/api-guides/tree/master/googlesheet)
+* [Golang tutorials](https://github.com/CryptoCompareLTD/api-guides/tree/master/golang)
 
 ## Rate limit
 You get the following error message if you are out of the rate limit:
