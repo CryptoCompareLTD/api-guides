@@ -1,41 +1,34 @@
 package main
 
 import (
-	"io/ioutil"
-	"log"
-	"net/http"
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"net/http"
 )
 
-func main() {
-	apiKey := ""
-	url := "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD&apiKey=" + apiKey
+func getPriceMultiFull(fsyms, tsyms, apiKey string) error {
 
-	req, err := http.NewRequest("GET", url, nil)
+	url := apiEndpoint + "data/pricemultifull?fsyms=" + fsyms + "&tsyms=" + tsyms + "&apiKey=" + apiKey
+
+	resp, err := http.Get(url)
 	if err != nil {
-		log.Fatal(err)
+		return fmt.Errorf("getPriceMultiFull, querying url, %s", err)
 	}
 
-	client := &http.Client{}
-
-	resp, err := client.Do(req)
-	if err != nil {
-		log.Fatal(err)
-	}
 	defer resp.Body.Close()
 
-	responseData, err := ioutil.ReadAll(resp.Body)
-    if err != nil {
-        log.Fatal(err)
-    }
-	
-	var responseObj interface{}
-	interfaceErr := json.Unmarshal(responseData, &responseObj)
-	if interfaceErr != nil {
-        log.Fatal(err)
-    }
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return fmt.Errorf("getPriceMultiFull, reading body %s", err)
+	}
 
-	fmt.Println(responseObj)
+	var respObj interface{}
+	if err := json.Unmarshal(body, &respObj); err != nil {
+		return fmt.Errorf("getPriceMultiFull, unmarshalling response, %s", err)
+	}
 
+	fmt.Println(respObj)
+
+	return nil
 }
