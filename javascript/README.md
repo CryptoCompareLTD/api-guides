@@ -35,7 +35,7 @@ var headers = {
    "Authorization": "Apikey " + apiKey 
 };
 
-var fullURL = getFullURL(baseURL, options);
+var fullURL = getFullURL(baseUrl, options);
 
 axios.get(fullURL, {headers: headers})
   .then(function(response) {
@@ -68,7 +68,7 @@ var options = {
     tsyms: "USD"
 };
 
-var fullURL = getFullURL(baseURL, options);
+var fullURL = getFullURL(baseUrl, options);
 
 axios.get(fullURL)
   .then(function(response) {
